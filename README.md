@@ -8,7 +8,7 @@ build a 5+ page website for any issue
 <li>regsteration</li>
 </ol>
   
-<b>name of the shop:</b> Hi-Tech Glocery<br/>
+<b>name of the shop:</b> Hi-Tech Glocery<br/><br/>
 <b>categories of products:</b> 
 <ol>
   <li>Laptops</li>
