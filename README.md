@@ -6,7 +6,7 @@ build a 5+ page website for any issue
 <li>shoping cart</li>
 <li>payment</li>
 <li>regsteration</li>
-<ol>
+</ol>
   
 <b>name of the shop:</b> Hi-Tech Glocery<br/>
 <b>categories of products:</b> 
