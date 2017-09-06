@@ -1,0 +1,91 @@
+.paysum{
+	float: left;
+}
+.pricecontainer{
+	float: left;
+}
+.poster{
+	float: right;
+	margin: 70px;
+	margin-top: 155px;
+}
+p{
+	margin: 0px;
+	font-size: 1.8em;
+	font-weight: bold;
+	color: red;
+	text-align: center;
+	text-shadow: 1px 1px 5px black;
+}
+.pallet{
+	float: left;
+	margin: 95px 100px 10px 100px;
+	border: 2px solid orange;
+	box-shadow: 2px 2px 10px black;
+	border-radius:5px;
+	width: 320px;
+	height: 700px;
+}
+.left{
+	text-align: left;
+	height: 20px;
+	font-size: .6em;
+	color: grey;
+}
+.right{
+	text-align: right;
+	height: 20px;
+	font-size: .6em;
+	color: grey;
+}
+.total{
+	text-align: right;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+.ltotal{
+	text-align: left;
+}
+.price{
+	color: blue;
+}
+.price td{
+	width: 150px;
+}
+.listdiv{
+	float: left;
+	border:3px inset orange;
+	height: 600px;
+}
+.list{
+	border-spacing: 10px;
+}
+.list td{
+	width: 100px;
+	text-align: right;
+	height: 30px;
+	font-size: .8em;
+}
+.list .mid{
+	text-align: left;
+}
+.list .front{
+	text-align: center;
+}
+form{
+	float: left;
+	margin-left: 60px; 
+}
+form img{
+	vertical-align: -50px;
+}
+input[type=button]{
+	margin-left: 20px;
+	width: 130px;
+	height: 80px;
+	margin-top:0px; 
+	font-size: 1.5em;
+	font-weight: bold;
+	color: white;
+	background-color: #415D87;
+}

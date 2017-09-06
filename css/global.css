@@ -1,0 +1,57 @@
+*{
+	box-sizing: border-box;
+}
+header a{
+	text-decoration: none;
+}
+body{
+	width: 1400px;
+	height: 900px;
+	margin: auto;
+}
+header h1{
+	margin: 0px 50px;
+}
+header .header{
+	float: left;
+	background-color: black;
+	color: white;
+	width: 100%;
+}
+a{
+	font-family: arial;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+a:visited{color: white;}
+a:link{color: white;}
+header ul{
+	float: right; 
+	list-style-type: none;
+	margin: 0px;
+	padding:0px;
+}
+header ul li{
+	margin:0 18px;
+	display: inline;
+	padding:0px 4px;
+}
+footer{
+	position: fixed;
+	display: block;
+	left:0;
+	bottom: 0;
+	right: 0;
+	background-color: blue;
+	color: gold;
+	font-weight: bold;
+	font-size: .6em;
+	text-align: center;
+
+}
+header{
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+}

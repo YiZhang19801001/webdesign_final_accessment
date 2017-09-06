@@ -1,0 +1,42 @@
+figure{
+	float: left;
+	width: 30%;
+	height: 450px;
+	background-color: yellow;
+	font-size: 3em;
+	margin: 95px 60px 10px 60px;
+}
+#price{
+	float: right;
+	width: 30%;
+	height: 533px;
+	
+	background-color: green;
+	margin:95px 15% 10px 15%;
+}
+table{
+	float: left;
+	margin-top: 200px;
+	margin-left: 30px;
+	border-spacing: 20px; 
+}
+td{
+	border: 1px solid blue;
+}
+#slidebar{
+	float: left;
+	width: 30%;
+	margin: 3px 60px;
+	height: 70px;
+	background-image: linear-gradient(white,red);
+
+}
+article{
+	float: left;
+	width: 80%;
+	margin: 3px 60px;
+	height: 200px;
+	background-color: black;
+	color: white;
+	text-align: center;
+}
