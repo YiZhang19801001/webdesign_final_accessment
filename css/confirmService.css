@@ -1,0 +1,19 @@
+.only{
+	height: 150px;
+	padding-top: 5px;
+	margin:300px auto;
+	color: white;
+	font-family: arial;
+	font-size: 30px; 
+	text-align: center;
+	background-color: black;
+}
+.only span{
+	color:#00DD00;
+}
+.extra{
+	float: left;
+	margin-top: -150px;
+	margin-left: -180px; 
+	 
+}

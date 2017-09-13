@@ -1,20 +1,82 @@
-table{
-	float: left;
-	margin: 95px 20% 10px 20%;
-	color: darkblue;
-	border:1px solid blue;
-	border-spacing: 10px;
-	width: 500px;
+html{
+	background-color: #1C1C1C;
 }
-
-.btn{
-	width: 500px;
+form{
 	float: left;
-	margin: 10px 20%;
-	border:1px solid blue;
+	background-color: black;
+	border-radius: 10px;
+	width: 850px;
+	margin: 100px 75px;
+	
+}
+.btnContainer{
+	float: right;
+}
+form h3{
+	float: left;
+	width: 100%;
+	color: #49D72D;
+	margin: 30px 12px 10px 12px;
 
+}
+form h1{
+	float: left;
+	width: 100%;
+	color: #49D72D;
+	margin: 30px 12px 10px 12px;
+	text-align: center;
 }
 button{
-	float:right;
-	margin: 0px 10px;
+	float:left;
+	margin: 10px 40px;
+	width: 150px;
+	height: 40px;
+	background-color: #49D72D;
+	border:none;
+	border-radius: 5px;
+}
+button:focus{
+	outline: none;
+}
+label{
+	
+	color:white;
+	font-family: serif;
+	font-size: .8em;
+	margin: 5px;
+	
+}
+input{
+	
+	background-color: #5C6769;
+	border-style: none;
+	border-radius:3px;
+	height: 40px;
+	color: white;
+	font-size: 1.2em;
+	width: 385px;
+	
+}
+input:active{
+	outline: none;
+}
+.email{
+	float: left;
+	width: 795px;
+}
+.box{
+	float: left;
+	margin: 12px;
+}
+.s{
+	float: left;
+	width:250px; 
+}
+form span{
+	float: right;
+	font-size: 12px;
+	color: red;
+	font-family: arial;
+	margin-top: 5px;
+	visibility: hidden;
 }

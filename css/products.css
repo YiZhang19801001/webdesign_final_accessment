@@ -1,42 +1,64 @@
-figure{
+.box{
 	float: left;
-	width: 30%;
-	height: 450px;
-	background-color: yellow;
-	font-size: 3em;
-	margin: 95px 60px 10px 60px;
+	margin: 95px 130px;
 }
-#price{
-	float: right;
-	width: 30%;
-	height: 533px;
-	
-	background-color: green;
-	margin:95px 15% 10px 15%;
-}
-table{
+.cate{
 	float: left;
-	margin-top: 200px;
-	margin-left: 30px;
-	border-spacing: 20px; 
+	display: inline-block;
+	width: 695px;
+	height: 310px;
+	margin:3px 2px 20px 2px;
+	color: white;
+	cursor: pointer;
 }
-td{
-	border: 1px solid blue;
+.cate:hover{
+	outline:2px solid white;
 }
-#slidebar{
-	float: left;
-	width: 30%;
-	margin: 3px 60px;
-	height: 70px;
-	background-image: linear-gradient(white,red);
-
+.cate h2{
+	font-family:  Verdana;
+	margin:20px;
 }
-article{
-	float: left;
-	width: 80%;
-	margin: 3px 60px;
-	height: 200px;
-	background-color: black;
+.cate article{
+	margin-top: 10px; 
+	font-family: arial;
+	width: 100%;
+	font-weight: bold;
 	color: white;
 	text-align: center;
+	opacity: 0;
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+	background-color: grey;
+	transition:0.8s ease-in;
+	line-height: 1.2;
+}
+.cate article p{
+	margin: 2px;
+}
+.cate article:hover{
+	opacity: 1;
+}
+#cate1{
+	background-image: url("../img/laptop.jpg");
+}
+#cate2{
+	background-image: url("../img/printer.jpg");
+}
+#cate3{
+	background-image: url("../img/ink.jpg");
+}
+#cate4{
+	background-image: url("../img/accessories.jpg");
+}
+.cate a{
+	text-decoration: none;
+}
+.cate a:link{
+	color:white;
+}
+.cate a:visited{
+	color:#656465;
+}
+.cate a:hover{
+	color: #00DD00;
 }

@@ -1,0 +1,150 @@
+body{
+	padding: 0px 10px;
+}
+figure{
+	float: left;
+	width: 405px;
+	height: 330px;
+	font-size: 3em;
+	padding-top:10px; 
+	margin: 10px 10px 5px 35px;
+	border-bottom:1px solid grey;
+}
+.price{
+	color: white;
+	font-family: Palatino;
+	background-color: black;
+	font-size: 16px;
+	float: right;
+	width: 475px;
+	height: 660px;
+	margin:95px 5px 10px 5px;
+	padding: 5px 40px;
+}
+table{
+	margin-top: 20px;
+	margin-left: 0px;
+	border-spacing: 10px; 
+}
+td{
+	border: 1px solid #333;
+	font-family: Courier New;
+	background-color: #333;
+	padding:5px 8px;
+	border-radius: 5px;
+	box-shadow: 1px 1px 5px black inset;
+}
+#slidebar{
+	float: left;
+	width: 275px;
+	margin: 0px 10px 10px 125px;
+}
+#slidebar img{
+	cursor: pointer;
+	opacity: 0.6;
+	transition: 0.6s ease;
+}
+#slidebar img:hover{
+	opacity: 1;
+}
+
+
+.label{
+	color: white;
+	font-family: Verdana;
+	margin:35px 60px 0px 35px;
+	padding:5px 10px;
+	background:linear-gradient(90deg, rgba(8,76,8,.8) 1%, rgba(24,114,24,1) 12%,rgba(0,0,0,0) 25%);
+	width: 405px;
+	border-bottom: 1px solid grey;
+	font-weight: bold;
+	font-size: .6em;
+}
+.price p{
+	color: #00FF00;
+	font-size: 24px;
+	font-family: Trebuchet MS;
+}
+button{
+	border: 1px solid #265526;
+	border-radius: 6px; 
+	background-image: url("../img/btn_background.png");
+	color: white;
+	font-weight: bold;
+	width: 150px;
+	height: 35px;
+	box-shadow: 2px 2px 5px #004400 inset;
+}
+button:focus{
+	outline: none;
+}
+.price ul{
+	float: left;
+	width: 350px;
+	color: #8F8F94;
+	font-size: 11px;
+}
+.barner{
+	margin: 120px 0px 0px 0px;
+	border:none;
+	border-spacing: 5px;
+}
+.barner td{
+	font-family: Arial;
+	font-weight: bold;
+	border:none;
+	border-left: 1px solid white; 
+	padding: 3px;
+	background-color: rgba(0,0,0,0);
+}
+#p1ul{
+	display: none;
+}
+#p2ul{
+	display: none;
+}
+#p3{
+	color: #00F00B;
+	border-color: #00F00B;
+}
+.picContainer{
+	float: left;
+	margin:95px 0px 0px 20px;
+	padding: 0px;
+	background-color: rgba(0,0,0,0.5); 
+	width: 475px;
+	height: 660px;
+}
+.alsobuy h2{
+	font-family: palatino;
+	color: white;
+	border-left: 1px solid #00FF00;
+	padding-left: 3px;
+}
+.alsobuy{
+	float: left;
+	margin: 10px 0px 100px 20px;
+}
+.alsoBuyPic{
+	background-color: black;
+	float: left;
+	width: 230px;
+	height: 210px;
+	margin: 10px 10px 0px 0px;
+	border: 1px solid #2D2D2D;
+	cursor:pointer;
+}
+.alsoBuyPic figcaption{
+	color: white;
+	font-size: 16px;
+	font-family: palatino;
+	margin: 0px 0px 30px 15px;
+}
+.alsoBuyPic span{
+	color: #00C000;
+	font-size: 18px;
+}
+.alsobuy img{
+	margin: 20px 50px 0px 50px;
+
+}
