@@ -2,77 +2,108 @@
 <html>
 <head>
 	<title>Shopping Cart</title>
-	<link rel="stylesheet" type="text/css" href="css/cart.css">
-	<link rel="stylesheet" type="text/css" href="css/global.css">
-	<script type="text/javascript" src="products.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/cart.css">
+	<link rel="stylesheet" type="text/css" href="../css/global.css">
+	<script type="text/javascript" src="../javaScript/cart.js"></script>
 </head>
-<body>
+<body  onload="calsum()">
 <header>
-	<div class="header"><h1>Hi-Tech Glocery</h1></div>
-	<nav class="nav"><ul>
-		<li>HomePage</li>
-		<li>Products+</li>
-		<li>Payment</li>
-		<li>Service+</li>
-		<li>Registration</li>
-	</ul></nav>
+	<div class="header">
+	<h1>Hi-Tech Glocery</h1>
+	<div class="img"><img src="../img/cart.png"><span>0</span></div>
+	<ul>
+		<li><a href="homePage.html">HomePage</a></li>
+		<li><a href="products.html" target="_blank">Products</a></li>
+		<li><a href="payment.html" target="_blank">Payment</a></li>
+		<li><a href="service.html" target="_blank">Service</a></li>
+		<li><a href="registration.html" target="_blank">Registration</a></li>
+	</ul>
+	
+	</div>
 </header>
-
-<table class="list">
+<div class="list">
+<h2>Shopping Cart</h2>
+<table id=list>
+	
 	<tr>
-		<td><img src="img/keyboard1.jpg"><p>keyboard white</p><p class="p2">NC50078</p></td>
-		<td><b>QTY: </b><input type="number" name=""></td>
-		<td><h3>Price: 55</h3><p class="p2">unit price: 55</p></td>
+		<td><img src="../img/cart_pic1.jpg"></td>
+		<td colspan="2"><article>Razer Lancehead Tournament - Black<br>Two Years Warranty<br>In Stock<br></article></td>
+		<td>
+			<div class="plus" onclick="cal(this)">+</div><br>
+			<input type="text" value="1"><span class="s2">AU$139.95</span>
+			<div class="minus" onclick="cal(this)">-</div><br><br>
+		</td>
+		<td><span class="s1">AU$139.95</span><br><span class="s2" onclick="remove(this)">Remove</span></td>
 	</tr>
 	<tr>
-		<td><img src="img/keyboard1.jpg"><p>keyboard white</p><p class="p2">NC50078</p></td>
-		<td><b>QTY: </b><input type="number" name=""></td>
-		<td><h3>Price: 55</h3><p class="p2">unit price: 55</p></td>
+		<td><img src="../img/cart_pic1.jpg"></td>
+		<td colspan="2"><article>Razer Lancehead Tournament - Black<br>Two Years Warranty<br>In Stock<br></td>
+		<td>
+			<div class="plus" onclick="cal(this)">+</div><br>
+			<input type="text" value="1"><span class="s2">AU$139.95</span>
+			<div class="minus" onclick="cal(this)">-</div><br><br>
+		</td>
+		<td><span class="s1">AU$139.95</span><br><span class="s2" onclick="remove(this)">Remove</span></td>
 	</tr>
 	<tr>
-		<td><img src="img/keyboard1.jpg"><p>keyboard white</p><p class="p2">NC50078</p></td>
-		<td><b>QTY: </b><input type="number" name=""></td>
-		<td><h3>Price: 55</h3><p class="p2">unit price: 55</p></td>
+		<td><img src="../img/cart_pic1.jpg"></td>
+		<td colspan="2"><article>Razer Lancehead Tournament - Black<br>Two Years Warranty<br>In Stock<br></td>
+		<td>
+			<div class="plus" onclick="cal(this)">+</div><br>
+			<input type="text" value="1"><span class="s2">AU$139.95</span>
+			<div class="minus" onclick="cal(this)">-</div><br><br>
+		</td>
+		<td><span class="s1">AU$139.95</span><br><span class="s2" onclick="remove(this)">Remove</span></td>
 	</tr>
 	<tr>
-		<td><img src="img/keyboard1.jpg"><p>keyboard white</p><p class="p2">NC50078</p></td>
-		<td><b>QTY: </b><input type="number" name=""></td>
-		<td><h3>Price: 55</h3><p class="p2">unit price: 55</p></td>
+		<td><img src="../img/cart_pic1.jpg"></td>
+		<td colspan="2"><article>Razer Lancehead Tournament - Black<br>Two Years Warranty<br>In Stock<br></td>
+		<td>
+			<div class="plus" onclick="cal(this)">+</div><br>
+			<input type="text" value="1"><span class="s2">AU$139.95</span>
+			<div class="minus" onclick="cal(this)">-</div><br><br>
+		</td>
+		<td><span class="s1">AU$139.95</span><br><span class="s2" onclick="remove(this)">Remove</span></td>
 	</tr>
 	<tr>
-		<td><img src="img/keyboard1.jpg"><p>keyboard white</p><p class="p2">NC50078</p></td>
-		<td><b>QTY: </b><input type="number" name=""></td>
-		<td><h3>Price: 55</h3><p class="p2">unit price: 55</p></td>
+		<td><img src="../img/cart_pic1.jpg"></td>
+		<td colspan="2"><article>Razer Lancehead Tournament - Black<br>Two Years Warranty<br>In Stock<br></td>
+		<td>
+			<div class="plus" onclick="cal(this)">+</div><br>
+			<input type="text" value="1"><span class="s2">AU$139.95</span>
+			<div class="minus" onclick="cal(this)">-</div><br><br>
+		</td>
+		<td><span class="s1">AU$139.95</span><br><span class="s2" onclick="remove(this)">Remove</span></td>
 	</tr>
 	<tr>
-		<td><img src="img/keyboard1.jpg"><p>keyboard white</p><p class="p2">NC50078</p></td>
-		<td><b>QTY: </b><input type="number" name=""></td>
-		<td><h3>Price: 55</h3><p class="p2">unit price: 55</p></td>
-	</tr>
-	<tr>
-		<td><img src="img/keyboard1.jpg"><p>keyboard white</p><p class="p2">NC50078</p></td>
-		<td><b>QTY: </b><input type="number" name=""></td>
-		<td><h3>Price: 55</h3><p class="p2">unit price: 55</p></td>
-	</tr>
-	<tr>
-		<td><img src="img/keyboard1.jpg"><p>keyboard white</p><p class="p2">NC50078</p></td>
-		<td><b>QTY: </b><input type="number" name=""></td>
-		<td><h3>Price: 55</h3><p class="p2">unit price: 55</p></td>
+		<td><img src="../img/cart_pic1.jpg"></td>
+		<td colspan="2"><article>Razer Lancehead Tournament - Black<br>Two Years Warranty<br>In Stock<br></td>
+		<td>
+			<div class="plus" onclick="cal(this)">+</div><br>
+			<input type="text" value="1"><span class="s2">AU$139.95</span>
+			<div class="minus" onclick="cal(this)">-</div><br><br>
+		</td>
+		<td><span class="s1">AU$139.95</span><br><span class="s2" onclick="remove(this)">Remove</span></td>
 	</tr>
 </table>
+</div>
 
-<button>Pay</button>
-
-<div class="pricecontainer">
-	<table class="price">
-		<tr><td class="left">Sub Total</td><td class="right">$440</td></tr>
-		<tr><td class="left">GST</td><td class="right">$44</td></tr>
-		<tr><td class="ltotal">Total</td><td class="total">$484</td></tr>
+<div class='sum'>
+	<h2>Cart Summary</h2>
+	<table>
+		<tr><td class="cl1">Subtotal: </td><td id="cl1">AU$139.95</td></tr>
+		<tr><td class="cl2">Free Shipping: </td><td id="cl2">AU$0.00</td></tr>
+		<tr><td class="cl3">GST:</td><td id="cl3">AU$13.95</td></tr>
+		<tr><td class="cl4">Total:</td><td id="cl4">AU$156.88</td></tr>
 	</table>
+	<article>
+		Actual shipping fee will be calculated later upon entry of your shipping information.
+	</article>
+	<button onclick="jump()">PROCEED TO CHECKOUT</button>
 </div>
 
 <footer>
-	<address>yi.zhang CertificateIV - Programming Term3 PD2 Petersham College</address>
+	<p>yi.zhang <span class="seperate">|</span> CertificateIV - Programming Term3 PD2 - 2017 <span class="seperate">|</span> Petersham College <span class="seperate">|</span> Teacher: Sathi <span class="seperate">|</span> Email: yizhang19801001@gmail.com</p>
 </footer>
 </body>
 </html>

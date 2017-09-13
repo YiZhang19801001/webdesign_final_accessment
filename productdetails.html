@@ -1,30 +1,106 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Products</title>
-	<link rel="stylesheet" type="text/css" href="css/products.css">
-	<link rel="stylesheet" type="text/css" href="css/global.css">
-	<script type="text/javascript" src="products.js"></script>
+	<title>Productdetails</title>
+	<link rel="stylesheet" type="text/css" href="../css/productdetails.css">
+	<link rel="stylesheet" type="text/css" href="../css/global.css">
+	<script type="text/javascript" src="../javascript/productdetails.js"></script>
 </head>
 <body>
 <header>
-	<div class="header"><h1>Hi-Tech Glocery</h1></div>
-	<nav class="nav"><ul>
-		<li>HomePage</li>
-		<li>Products+</li>
-		<li>Payment</li>
-		<li>Service+</li>
-		<li>Registration</li>
-	</ul></nav>
+	<div class="header">
+	<h1>Hi-Tech Glocery</h1>
+	<div class="img"><img src="../img/cart.png"><span>0</span></div>
+	<ul>
+		<li><a href="homePage.html">HomePage</a></li>
+		<li><a href="products.html" target="_blank">Products</a></li>
+		<li><a href="payment.html" target="_blank">Payment</a></li>
+		<li><a href="service.html" target="_blank">Service</a></li>
+		<li><a href="registration.html" target="_blank">Registration</a></li>
+	</ul>
+	
+	</div>
 </header>
 
-<figure>picture goes here</figure>
-<div id="price"><h2>Price details</h2><ol><li>unit price</li><li>deliverfee</li><li>QTY</li></ol><table><tr><td>model1</td><td>model2</td><td>model3</td></tr></table></div>
-<div id="slidebar">Slidebar product image</div>
+<div class="picContainer">
+<div class="label">Popular</div>
+<figure><img id='display' src="../img/mouse1_1.png"></figure>
+<div id="slidebar">
+	<img onclick="change(this)" id="btn1" src="../img/small1_1.png">
+	<img onclick="change(this)" id="btn2" src="../img/small1_2.png">
+	<img onclick="change(this)" id="btn3" src="../img/small1_3.png">
+	<img onclick="change(this)" id="btn4" src="../img/small1_4.png">
+</div>
+</div>
 
-<article><p>comments</p><p>introductions</p><p>reviews</p></article>
+
+<div class="price">
+
+<h2>RAZER LANCEHEAD TOURNAMENT EDITION - <span id='model'>MERCURY WHITE</span></h2>
+<p>AUD $139.95</p>
+<button onclick="jump(1)">ADD TO CART</button>
+
+<table>
+<tr>
+<td id="tag1" onclick="change2(this)">Mercury White</td>
+<td id="tag2" onclick="change2(this)">Black</td>
+<td id="tag3" onclick="change2(this)">Gunmetal Grey</td>
+</tr>
+</table>
+
+<table class='barner'>
+	<tr>
+		<td onclick="change3(this)" id='p1'>PROMOTIONS</td>
+		<td onclick="change3(this)" id='p2'>FEATURES</td>
+		<td onclick="change3(this)" id='p3'>SPECIFICATION</td>
+	</tr>
+</table>
+
+<ul id="p1ul">
+<li>FREE Economy Shipping on orders over AU$89 to Australia. Additional custom and tariff fees may apply.</li>
+</ul>
+<ul id="p2ul">
+	<li>The world’s most advanced optical gaming sensor 16,000 DPI | 450 IPS | 50 G</li>
+	<li>All-new ambidextrous form factor for both left-and right-handed gameplay</li>
+	<li>Powered by Razer Synapse 3 Hybrid On-board and Cloud memory</li>
+	<li>Gaming optimized Razer™ Mechanical Mouse Switches durable up to 50 million clicks</li>
+</ul>
+<ul id="p3ul">
+	<li>True 16,000 DPI 5G optical sensor</li>
+	<li>Up to 450 inches per second (IPS) / 50 G acceleration</li>
+	<li>On-The-Fly Sensitivity Adjustment</li>
+	<li>Razer™ Mechanical Mouse Switches</li>
+	<li>Gaming-grade tactile scroll wheel</li>
+	<li>Ambidextrous design with enhanced rubber side grips</li>
+</ul>
+</div>
+<div class="alsobuy">
+	<h2>YOU MAY ALSO LIKE</h2>
+<figure class="alsoBuyPic" onclick="jump(2)">
+	<img src="../img/alsobuy01.jpg">
+	<figcaption>Razer Firefly<br><span class="alsoBuyPrice">AU$109.95</span></figcaption>
+</figure>
+
+<figure class="alsoBuyPic" onclick="jump(2)">
+	<img src="../img/alsobuy02.jpg">
+	<figcaption>Razer Taipan<br><span class="alsoBuyPrice">AU$139.95</span></figcaption>
+</figure>
+
+<figure class="alsoBuyPic" onclick="jump(2)">
+	<img src="../img/alsobuy03.jpg">
+	<figcaption>Razer Diamondback<br><span class="alsoBuyPrice">AU$159.95</span></figcaption>
+</figure>
+
+<figure class="alsoBuyPic" onclick="jump(2)">
+	<img src="../img/alsobuy04.jpg">
+	<figcaption>Razer Ouroboros<br><span class="alsoBuyPrice">AU$239.95</span></figcaption>
+</figure>
+
+</div>
+
+
 <footer>
-	<address>yi.zhang CertificateIV - Programming Term3 PD2 Petersham College</address>
+	<p>yi.zhang <span class="seperate">|</span> CertificateIV - Programming Term3 PD2 - 2017 <span class="seperate">|</span> Petersham College <span class="seperate">|</span> Teacher: Sathi <span class="seperate">|</span> Email: yizhang19801001@gmail.com</p>
 </footer>
 
 </body>

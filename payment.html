@@ -2,49 +2,100 @@
 <html>
 <head>
 	<title>Payment</title>
-	<link rel="stylesheet" type="text/css" href="css/pay.css">
-	<link rel="stylesheet" type="text/css" href="css/global.css">
-	<script type="text/javascript" src="homepage.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/pay.css">
+	<link rel="stylesheet" type="text/css" href="../css/global.css">
+	<script type="text/javascript" src="../javascript/pay.js"></script>
 </head>
 <body>
 <header>
-	<div class="header"><h1>Hi-Tech Glocery</h1></div>
-	<nav class="nav"><ul>
-		<li>HomePage</li>
-		<li>Products+</li>
-		<li>Payment</li>
-		<li>Service+</li>
-		<li>Registration</li>
-	</ul></nav>
+	<div class="header">
+	<h1>Hi-Tech Glocery</h1>
+	<div class="img"><img src="../img/cart.png"><span>0</span></div>
+	<ul>
+		<li><a href="homePage.html">HomePage</a></li>
+		<li><a href="products.html" target="_blank">Products</a></li>
+		<li><a href="payment.html" target="_blank">Payment</a></li>
+		<li><a href="service.html" target="_blank">Service</a></li>
+		<li><a href="registration.html" target="_blank">Registration</a></li>
+	</ul>
+	
+	</div>
 </header>
 
 <div class="pallet">
+	<h2>Review Order</h2>
 	<div class="listdiv">
 	<table class="list">
-		<tr><td class="front">1</td><td class="mid">Keyboard</td><td>$44</td></tr>
-		<tr><td class="front">1</td><td class="mid">Monitor</td><td>$550</td></tr>
-		<tr><td class="front">1</td><td class="mid">RAM</td><td>$77</td></tr>
+		<tr><td class="front">1</td><td class="mid">Keyboard</td><td>AU$44</td></tr>
+		<tr><td class="front">1</td><td class="mid">Monitor</td><td>AU$550</td></tr>
+		<tr><td class="front">1</td><td class="mid">RAM</td><td>AU$77</td></tr>
 	</table>
 	</div>
 	<table class="price">
-		<tr><td class="left">Sub Total</td><td class="right">$671</td></tr>
-		<tr><td class="left">GST</td><td class="right">$67</td></tr>
-		<tr><td class="ltotal">Total</td><td class="total">$738</td></tr>
+		<tr><td class="left">Sub Total</td><td class="right">AU$671</td></tr>
+		<tr><td class="left">GST</td><td class="right">AU$67</td></tr>
+		<tr><td class="ltotal">Total</td><td class="total">AU$738</td></tr>
 	</table>
 </div>
 
 <div class="poster">
-	<img src="img/computer.png">
 	<p>Limited Time only</p>
+	<img src="../img/pay_poster.jpg" onclick="jump()">	
 </div>
 
-<form class="method" action="">
-  <input type="radio" name="mthd" value="CreditCard"><img src="img/credit.png">
-  <input type="radio" name="mthd" value="Cash"><img src="img/cash.png">
-  <input type="button" name="submit" value="submit">
+<form class="method" id='method' action="">
+
+<h2>Payment Method</h2>
+
+  <input type="radio" name="mthd" value="CreditCard" onclick="show(1)"  checked="checked"><img src="../img/credit1.gif"><img src="../img/credit2.gif"><img src="../img/credit3.gif">
+  <input type="radio" name="mthd" value="paypal" onclick="show(2)"><img src="../img/paypal.gif">
+
+  <div id='paymentdetails'>
+	  <div class="box2"><label>User Name* </label><input type="text" name=""></div>
+	  <div class="box2"><label>Pass Word* </label><input type="password" name=""></div>
+	  <div class="box1"><label>Credit Card Number* </label><input type="text" name=""></div>
+	  <div class="box1"><label>Card Security Code* </label><input type="text" name=""></div>
+	  <div class="box1"><label>Expiration Date* </label>
+	  	<select class="combx">
+	  		<option value="Please Select">Please Select</option>
+	  		<option value="01">01</option>
+	  		<option value="02">02</option>
+	  		<option value="03">03</option>
+	  		<option value="04">04</option>
+	  		<option value="05">05</option>
+	  		<option value="06">06</option>
+	  		<option value="07">07</option>
+	  		<option value="08">08</option>
+	  		<option value="09">09</option>
+	  		<option value="10">10</option>
+	  		<option value="11">11</option>
+	  		<option value="12">12</option>
+	  	</select>
+	  </div>
+	  <span class="slash">/</span>
+	  <div class="box1"><label></label>
+	  	<select class="combx">
+	  		<option value="Please Select">Please Select</option>
+	  		<option value="2017">2017</option>
+	  		<option value="2018">2018</option>
+	  		<option value="2019">2019</option>
+	  		<option value="2020">2020</option>
+	  		<option value="2021">2021</option>
+	  		<option value="2022">2022</option>
+	  	</select>
+	  </div>
+  </div>
+  <div id="btnbox">
+	  <button type='button' onclick="check()")>CONFIRM PAYMENT</button>
+	  <button type='button' onclick="window.open('products.html','_blank')">BACK TO SHOPPING</button>
+  </div>
 </form>
+
+
+
 <footer>
-	<address>yi.zhang CertificateIV - Programming Term3 PD2 Petersham College</address>
+	<p>yi.zhang <span class="seperate">|</span> CertificateIV - Programming Term3 PD2 - 2017 <span class="seperate">|</span> Petersham College <span class="seperate">|</span> Teacher: Sathi <span class="seperate">|</span> Email: yizhang19801001@gmail.com</p>
 </footer>
+
 </body>
 </html>

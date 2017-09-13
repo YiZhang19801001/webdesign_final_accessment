@@ -2,16 +2,20 @@
 <html>
 <head>
 	<title>HomePage</title>
-	<link rel="stylesheet" type="text/css" href="css/homepage.css">
-	<link rel="stylesheet" type="text/css" href="css/global.css">
-	<script type="text/javascript" src="javascript/homepage.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/homepage.css">
+	<link rel="stylesheet" type="text/css" href="../css/global.css">
+	<script type="text/javascript" src="../javascript/homepage.js"></script>
 
 </head>
-<!-- <body onload="setInterval(secondPassed, 1000)"> -->
-<body>
+
+
+<body onload="setInterval(secondPassed, 1000);change(0)">
+
+
 <header>
 	<div class="header">
 	<h1>Hi-Tech Glocery</h1>
+	<div class="img"><img src="../img/cart.png"><span>0</span></div>
 	<ul>
 		<li><a href="homePage.html">HomePage</a></li>
 		<li><a href="products.html" target="_blank">Products</a></li>
@@ -19,18 +23,43 @@
 		<li><a href="service.html" target="_blank">Service</a></li>
 		<li><a href="registration.html" target="_blank">Registration</a></li>
 	</ul>
+	
 	</div>
 </header>
-<div id="postercontainer"><div id="poster">Poster</div></div>
-<div id="countdown">countdown</div>
 
-<div class="cate" id="cate1"><h2>Laptop</h2><ul><li>Dell</li><li>IBM</li><li>Lenova</li><li>Acer</li></ul></div>
-<div class="cate" id="cate2"><h2>Printer</h2><ul><li>Conna</li><li>HP</li><li>Acer</li><li>Officework</li></ul></div>
-<div class="cate" id="cate3"><h2>Consumables</h2><ul><li>Paper</li><li>Ink</li><li>Cleaning</li></ul></div>
-<div class="cate" id="cate4"><h2>Accessories</h2><ul><li>Mouse</li><li>Keyborad</li><li>Speaker</li><li>FlashDrive</li></ul></div>
+<div class="postercontainer">
+
+<div class="mySlides fade">
+	<img src="../img/slide1.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+	<img src="../img/slide2.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+	<img src="../img/slide3.jpg" style="width:100%">
+</div>
+
+<a class="prev" onclick="change(-1)">&#10094;</a>
+<a class="next" onclick="change(1)">&#10095;</a>
+</div>
+
+<div id="countdowncontainer"><span id="countdown">countdown</span><img src="../img/i5.png"></div>
+
+<div class="cate">
+	<img src="../img/cate1.jpg" onclick="window.open('productdetails.html','_blank')">
+	<img src="../img/cate2.jpg" onclick="window.open('productdetails.html','_blank')">
+	<img src="../img/cate3.jpg" onclick="window.open('productdetails.html','_blank')">
+</div>
+
+
+<img class='extra' src="../img/foreground.png">
+
+
 
 <footer>
-	<address>yi.zhang CertificateIV - Programming Term3 PD2 Petersham College</address>
+	<p>yi.zhang <span class="seperate">|</span> CertificateIV - Programming Term3 PD2 - 2017 <span class="seperate">|</span> Petersham College <span class="seperate">|</span> Teacher: Sathi <span class="seperate">|</span> Email: yizhang19801001@gmail.com</p>
 </footer>
 
 

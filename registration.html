@@ -2,40 +2,97 @@
 <html>
 <head>
 	<title>Registration</title>
-	<link rel="stylesheet" type="text/css" href="css/reg.css">
-	<link rel="stylesheet" type="text/css" href="css/global.css">
-	<script type="text/javascript" src="homepage.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/reg.css">
+	<link rel="stylesheet" type="text/css" href="../css/global.css">
+	<script type="text/javascript" src="../javascript/reg.js"></script>
 </head>
 <body>
 <header>
-	<div class="header"><h1>Hi-Tech Glocery</h1></div>
-	<nav class="nav"><ul>
-		<li>HomePage</li>
-		<li>Products+</li>
-		<li>Payment</li>
-		<li>Service+</li>
-		<li>Registration</li>
-	</ul></nav>
+	<div class="header">
+	<h1>Hi-Tech Glocery</h1>
+	<div class="img"><img src="../img/cart.png"><span>0</span></div>
+	<ul>
+		<li><a href="homePage.html">HomePage</a></li>
+		<li><a href="products.html" target="_blank">Products</a></li>
+		<li><a href="payment.html" target="_blank">Payment</a></li>
+		<li><a href="service.html" target="_blank">Service</a></li>
+		<li><a href="registration.html" target="_blank">Registration</a></li>
+	</ul>
+	
+	</div>
 </header>
-<table>
-	<thead><th colspan="2">Register For a New Account</th></thead>
-	<tr><td>Title</td><td><input type="text" name=""></td></tr>
-	<tr><td>First Name</td><td><input type="text" name=""></td></tr>
-	<tr><td>Last Name</td><td><input type="text" name=""></td></tr>
-	<tr><td>Mobile</td><td><input type="text" name=""></td></tr>
-	<tr><td>Email</td><td><input type="text" name=""></td></tr>
-	<tr><td>Building Number</td><td><input type="text" name=""></td></tr>
-	<tr><td>Street Number</td><td><input type="text" name=""></td></tr>
-	<tr><td>Street Name</td><td><input type="text" name=""></td></tr>
-	<tr><td>Suburb</td><td><input type="text" name=""></td></tr>
-	<tr><td>State</td><td><input type="text" name=""></td></tr>
-</table>
-<div class="btn">
-<button>Clear</button>
-<button>Submit</button>
+
+<form id="reg" action="post" target="confirmReg.html">
+<h1>New Customer</h1>
+<h3>Log in information</h3>
+
+<div class="box">
+<label for="Email">Email</label><span id="email">*Email is not valide</span><br>
+	<input class="email" type="text" name="Email">
 </div>
+
+<div class="box">
+<label for="psw1">Password</label><span id="password1">*Password is not valide, should only have '0~9' 'A~Z' 'a~z'</span><br>
+	<input type="password" name="psw1">
+</div>
+
+<div class="box">
+<label for="psw2">Confirm Password</label><span id="password2">*Password is not matched</span><br>
+	<input type="password" name="psw2">
+</div>
+
+<h3>Personal information</h3>
+<div class="box">
+<label for="fn">First name*</label><span id="firstName">*Only letter is accepted</span><br>
+	<input type="text" name="fn"><br>
+</div>
+<div class="box">
+<label for="ln">Last name*</label><span id="lastName">*Only letter is accepted</span><br>
+	<input type="text" name="ln"><br>
+</div>
+<div class="box">
+<label for="mobile">Mobile number</label><span id="mobile">*Only numbers is accepted</span><br>
+	<input type="text" name="mobile"><br>
+</div>
+
+<div class="box">
+<label for="home">Home number</label><span id="homeNumber">*Only number is accepted</span><br>
+	<input type="text" name="home"><br>
+</div>
+
+<h3>Delivery address</h3>
+<div class="box">
+<label for="suite">Building/level/suite</label><span id="unitNo">*Invalide</span><br>
+<input type="text" class="email" name="suite">
+</div>
+
+<div class="box">
+<label for="street">Street address*</label><span id="streetAdd">*Invalide</span><br>
+<input type="text" class="email" name="street">
+</div>
+
+<div class="box">
+<label for="postcode">Postcode*</label><span id="postCode">*Invalide</span><br>
+<input type="text" class="s" name="postcode">
+</div>
+
+<div class="box">
+<label for="city">City/suburb*</label><span id="city">*Invalide</span><br>
+<input type="text" class="s" name="city">
+</div>
+
+<div class="box">
+<label for="State">State*</label><span id="state">*Invalide</span><br>
+<input type="text" class="s" name="State">
+</div>
+
+<div class="btnContainer">
+<button type="reset" onclick="clear()" value="clear">Clear</button>
+<button type="button" onclick="return check()" value="submit">Submit</button>
+</div>
+</form>
 <footer>
-	<address>yi.zhang CertificateIV - Programming Term3 PD2 Petersham College</address>
+	<p>yi.zhang <span class="seperate">|</span> CertificateIV - Programming Term3 PD2 - 2017 <span class="seperate">|</span> Petersham College <span class="seperate">|</span> Teacher: Sathi <span class="seperate">|</span> Email: yizhang19801001@gmail.com</p>
 </footer>
 </body>
 </html>
